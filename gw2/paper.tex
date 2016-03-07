@@ -4,11 +4,18 @@
 %
 \documentclass[letterpaper,12pt,titlepage]{article}
 %\title{ZFS and Identity Management}
+\date{Monday, March 7th 2016}
 \author{Slava Maslennikov \and Henry Cammermann \and Jonathan Quiros}
+
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\date{Monday, March 7th 2016}
-\rhead{ZFS and Identity Management}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\fancyhf{}
+
+\lhead{\fancyplain{}{ \rightmark }} 
+\rhead{\fancyplain{}ZFS and Identity Management}
+\cfoot{\fancyplain{}{ \thepage }}
+
 
 \begin{document}
 %\maketitle
@@ -30,13 +37,14 @@ Dr. Rich
 {\large \today\par}
 \end{titlepage}
 
+\tableofcontents
+
 %Each experts group will write a paper describing a module in the CPP identity management infrastructure. The paper should be between 4 and 10 pages long, and should include sections that cover the following topics (as applicable to the module).
 %
 %Functionality
 %What functionality does the module provide?
 
-%\section{Functionality}
-% \section looks bad. Shouldn't have sections anyway
+\section{Functionality}
 ZFS in our identity management platform provides numerous vital functions, the most obvious being storage for students, staff and faculty. Every currently affiliated person on campus has their own space on ZFS, accessible from machines on campus as well as their own computers. Although ZFS is natively a linux-born file system, it is actually made available through Samba in order to be accessible from all operating systems: MS Windows, OS X and Linux. 
 
 ZFS on campus also has a ZFSWeb component. Every currently affiliated human on campus has a directory made to be world-accessible through HTTP. Its outside address is in the form of http://www.cpp.edu/$\sim$[uid]/. Up until recently, this was a non-optional feature, however, now it must be enabled through the user IDM front-end. 
@@ -44,17 +52,19 @@ ZFS on campus also has a ZFSWeb component. Every currently affiliated human on c
 %Identity Information
 %For modules that initiate automatic or manual identity information updates, what information is automatically and/or manually updated, and what are the authoritative sources? For server administration modules, What identity information is stored in the server? In what form?
 
-%\section{Identity Information}
-% sections suck
+\section{Identity Information}
 The ZFS module has several obvious variables that must be kept sane. They include the owner's user or group ID, the name of the share, quota, snap quota. The share is tied to the user/group ID, that's the unique key. If it changes, it is automatically changed in ZFS by IDM. The quota and snap quota aren't automatically changed, but can be manually through IDM. 
 
 %Invocation
 %How is the module’s functionality invoked? If there is an Application Programming Interface (API), what methods are published, and how is access controlled? Supporting Modules What supporting Perl modules (internal and external to Identity) are used? For what purposes?
+\section{Invocation}
 
 %Underlying Services
 %For server administration modules, what services are provided by the underlying server? Does the server provide service that facilitates authentication and/or authorization? What clients (in general and at Cal Poly Pomona) use the service?For what purposes?
+\section{Underlying Services}
 
 %Service Connection Management
 %For server administration modules, how are server network connections and requests made and efficiently managed and reused? How does the underlying server authenticate the principal who is making requests?
+\section{Service Connection Management}
 
 \end{document}
