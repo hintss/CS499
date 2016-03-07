@@ -4,4 +4,6 @@
 %Programming Interface (API), what methods are published, and how is
 %access controlled? 
 
-ZFS is a file system and logical volume manager, therefore many of the other supporting modules used for identity management will use ZFS to modify a user or group's file system. In this case, the ZFS module does not have a direct API but rather a 
+ZFS is a file system and logical volume manager, therefore many of the other supporting modules used for identity management will use ZFS to modify a user or group's file system. In this case, the ZFS module does not have a direct API, instead, Identity Management uses REST calls to perform certain functions. The calls are pre-coded in a separate subroutine in the code, which gets triggered in turn by other subroutines.  
+
+The access, in turn, is controlled by ZFS itself: idmgmt has its own account that it uses for making system changes. It logs into ZFS over REST before making any other REST calls. 
