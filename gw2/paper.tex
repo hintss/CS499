@@ -53,7 +53,7 @@ ZFS on campus also has a ZFSWeb component. Every currently affiliated human on c
 %For modules that initiate automatic or manual identity information updates, what information is automatically and/or manually updated, and what are the authoritative sources? For server administration modules, What identity information is stored in the server? In what form?
 
 \section{Identity Information}
-The ZFS module has several obvious variables that must be kept sane. They include the owner's user or group ID, the name of the share, the quota, and the snap quota. The share is tied to the user/group ID, that's the unique key. If it changes, it is automatically changed in ZFS by ID Management. The quota and snap quota aren't automatically changed, but can be manually through ID Management. 
+The ZFS module has several obvious variables that must be kept sane. They include the owner's user or group ID, the name of the share, the quota, and the snap quota. The share is tied to the user/group ID, that's the unique key. If it changes, it is automatically changed in ZFS by ID Management. The quota and snap quota aren't automatically changed, but can be manually changed through ID Management. 
 
 %Invocation
 %How is the module’s functionality invoked? If there is an Application
@@ -61,10 +61,7 @@ The ZFS module has several obvious variables that must be kept sane. They includ
 %access controlled? 
 
 \section{Invocation}
-ZFS is a file system and logical volume manager, therefore many of the other
-supporting modules used for identity management will use ZFS to modify
-a user or group's file system. In this case, the ZFS module does not have a
-direct API but rather a 
+ZFS is a file system and logical volume manager, therefore many of the other supporting modules used for identity management will use ZFS to modify a user or group's file storage. In this case, the ZFS module does not have a direct API but rather just a series of command-line tools for manipulating shares and snapshots
 
 %Supporting Modules
 %What supporting Perl modules (internal and external to Identity) are used? For what purposes?
