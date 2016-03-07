@@ -1,8 +1,7 @@
 \section{Functionality}
 %Functionality
 %What functionality does the module provide?
-ZFS in our identity management platform provides numerous vital functions, the most obvious being storage for students, staff and faculty. Every currently affiliated person on campus has their own space on ZFS, accessible from machines on campus as well as their own computers. Although ZFS is natively a *nix-born file system (first introduced with OpenSolaris in 2005), it is made available to campus users through Samba in order to be accessible from all operating
-systems: MS Windows, OS X, and Linux. 
+ZFS in our identity management platform provides numerous vital functions, the most obvious being storage for students, staff and faculty. Every currently affiliated person on campus has their own space on ZFS, accessible from machines on campus as well as their own computers. Although ZFS is natively a *nix-born file system (first introduced with OpenSolaris in 2005), it is made available to campus users through Samba in order to be accessible from all operating systems: MS Windows, OS X, and Linux. When accessing campus *nix servers, however, the share is mounted as \$HOME (the home directory) using NFSv4. 
 
 ZFS on campus also has a ZFSWeb component. Every currently affiliated human on campus has a directory made to be world-accessible through HTTP. Its outside address is in the form of http://www.cpp.edu/$\sim$[uid]/. Up until recently, this was a non-optional feature, however, now it must be enabled through the identity management front-end on CalPoly website.
 
