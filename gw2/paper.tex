@@ -1,0 +1,39 @@
+%        File: paper.tex
+%     Created: Mon Mar 07 08:00 AM 2016 P
+% Last Change: Mon Mar 07 08:00 AM 2016 P
+%
+\documentclass[letterpaper,12pt,titlepage]{article}
+\pagestyle{plain}
+\title{ZFS and Identity Management}
+\author{Slava Maslennikov \and Henry Cammermann \and Jonathan Quiros}
+\date{Monday, March 7th 2016}
+\begin{document}
+\maketitle
+
+%Each experts group will write a paper describing a module in the CPP identity management infrastructure. The paper should be between 4 and 10 pages long, and should include sections that cover the following topics (as applicable to the module).
+%
+%Functionality
+%What functionality does the module provide?
+
+%\section{Functionality}
+% \section looks bad. Shouldn't have sections anyway
+ZFS in our identity management platform provides numerous vital functions, the most obvious being storage for students, staff and faculty. Every currently affiliated person on campus has their own space on ZFS, accessible from machines on campus as well as their own computers. Although ZFS is natively a linux-born file system, it is actually made available through Samba in order to be accessible from all operating systems: MS Windows, OS X and Linux. 
+
+ZFS on campus also has a ZFSWeb component. Every currently affiliated human on campus has a directory made to be world-accessible through HTTP. Its outside address is in the form of http://www.cpp.edu/$\sim$[uid]/. Up until recently, this was a non-optional feature, however, now it must be enabled through the user IDM front-end. 
+
+%Identity Information
+%For modules that initiate automatic or manual identity information updates, what information is automatically and/or manually updated, and what are the authoritative sources? For server administration modules, What identity information is stored in the server? In what form?
+
+\section{Identity Information}
+hello
+
+%Invocation
+%How is the module’s functionality invoked? If there is an Application Programming Interface (API), what methods are published, and how is access controlled? Supporting Modules What supporting Perl modules (internal and external to Identity) are used? For what purposes?
+%
+%Underlying Services
+%For server administration modules, what services are provided by the underlying server? Does the server provide service that facilitates authentication and/or authorization? What clients (in general and at Cal Poly Pomona) use the service?For what purposes?
+%
+%Service Connection Management
+%For server administration modules, how are server network connections and requests made and efficiently managed and reused? How does the underlying server authenticate the principal who is making requests?
+%
+\end{document}
