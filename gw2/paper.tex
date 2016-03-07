@@ -41,43 +41,43 @@ Dr. Rich
 
 %Each experts group will write a paper describing a module in the CPP identity management infrastructure. The paper should be between 4 and 10 pages long, and should include sections that cover the following topics (as applicable to the module).
 %
-%Functionality
-%What functionality does the module provide?
 
 \section{Functionality}
-ZFS in our identity management platform provides numerous vital functions, the most obvious being storage for students, staff and faculty. Every currently affiliated person on campus has their own space on ZFS, accessible from machines on campus as well as their own computers. Although ZFS is natively a unix-born file system, it is also made available through Samba in order to be accessible from all operating systems: MS Windows, OS X, and Linux. 
+%Functionality
+%What functionality does the module provide?
+ZFS in our identity management platform provides numerous vital functions, the most obvious being storage for students, staff and faculty. Every currently affiliated person on campus has their own space on ZFS, accessible from machines on campus as well as their own computers. Although ZFS is natively a *nix-born file system (first introduced with OpenSolaris in 2005), it is made available to campus users through Samba in order to be accessible from all operating systems: MS Windows, OS X, and Linux. 
 
-ZFS on campus also has a ZFSWeb component. Every currently affiliated human on campus has a directory made to be world-accessible through HTTP. Its outside address is in the form of http://www.cpp.edu/$\sim$[uid]/. Up until recently, this was a non-optional feature, however, now it must be enabled through the user ID Management front-end.
+ZFS on campus also has a ZFSWeb component. Every currently affiliated human on campus has a directory made to be world-accessible through HTTP. Its outside address is in the form of http://www.cpp.edu/$\sim$[uid]/. Up until recently, this was a non-optional feature, however, now it must be enabled through the identity management front-end on CalPoly website.
 
+ZFS as a file system has numerous important features, such as access list support and high limit of volume and file size (256 zebibytes and 16 exbibytes, relatively). Those are important for a file system used for campus-wide user shares. Access lists allow picking and choosing access to files and directories on a per-person or a per-group level, while the high volume size limit means we won't run into the software space limitation any time soon. 
+
+\section{Identity Information}
 %Identity Information
 %For modules that initiate automatic or manual identity information updates, what information is automatically and/or manually updated, and what are the authoritative sources? For server administration modules, What identity information is stored in the server? In what form?
 
-\section{Identity Information}
 The ZFS module has several obvious variables that must be kept sane. They include the owner's user or group ID, the name of the share, the quota, and the snap quota. The share is tied to the user/group ID, that's the unique key. If it changes, it is automatically changed in ZFS by ID Management. The quota and snap quota aren't automatically changed, but can be manually through ID Management. 
 
+\section{Invocation}
 %Invocation
 %How is the module’s functionality invoked? If there is an Application
 %Programming Interface (API), what methods are published, and how is
 %access controlled? 
 
-\section{Invocation}
-ZFS is a file system and logical volume manager, therefore many of the other
-supporting modules used for identity management will use ZFS to modify
-a user or group's file system. In this case, the ZFS module does not have a
-direct API but rather a 
+ZFS is a file system and logical volume manager, therefore many of the other supporting modules used for identity management will use ZFS to modify a user or group's file system. In this case, the ZFS module does not have a direct API but rather a 
 
+\section{Supporting Modules}
 %Supporting Modules
 %What supporting Perl modules (internal and external to Identity) are used? For what purposes?
 
-\section{Supporting Modules}
 
-
+\section{Underlying Services}
 %Underlying Services
 %For server administration modules, what services are provided by the underlying server? Does the server provide service that facilitates authentication and/or authorization? What clients (in general and at Cal Poly Pomona) use the service?For what purposes?
-\section{Underlying Services}
 
-%Service Connection Management
-%For server administration modules, how are server network connections and requests made and efficiently managed and reused? How does the underlying server authenticate the principal who is making requests?
 \section{Service Connection Management}
+%Service Connection Management
+
+%For server administration modules, how are server network connections and requests made and efficiently managed and reused? How does the underlying server authenticate the principal who is making requests?
+
 
 \end{document}
