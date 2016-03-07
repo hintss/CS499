@@ -3,12 +3,32 @@
 % Last Change: Mon Mar 07 08:00 AM 2016 P
 %
 \documentclass[letterpaper,12pt,titlepage]{article}
-\pagestyle{plain}
-\title{ZFS and Identity Management}
+%\title{ZFS and Identity Management}
 \author{Slava Maslennikov \and Henry Cammermann \and Jonathan Quiros}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
 \date{Monday, March 7th 2016}
+\rhead{ZFS and Identity Management}
+
 \begin{document}
-\maketitle
+%\maketitle
+% custom looks better
+
+\begin{titlepage}
+\centering
+{\scshape\LARGE Cal Poly Pomona\par}
+\vspace{1cm}
+{\scshape\Large Groupwork Assignment 2\par}
+\vspace{1.5cm}
+{\scshape\bfseries ZFS and Identity Management\par}
+\vspace{2cm}
+{\Large\itshape Slava Maslennikov, Henry Cammermann, Jonathan Quiros\par}
+\vfill
+CS499-02\par
+Dr. Rich
+\vfill
+{\large \today\par}
+\end{titlepage}
 
 %Each experts group will write a paper describing a module in the CPP identity management infrastructure. The paper should be between 4 and 10 pages long, and should include sections that cover the following topics (as applicable to the module).
 %
@@ -24,16 +44,17 @@ ZFS on campus also has a ZFSWeb component. Every currently affiliated human on c
 %Identity Information
 %For modules that initiate automatic or manual identity information updates, what information is automatically and/or manually updated, and what are the authoritative sources? For server administration modules, What identity information is stored in the server? In what form?
 
-\section{Identity Information}
-hello
+%\section{Identity Information}
+% sections suck
+The ZFS module has several obvious variables that must be kept sane. They include the owner's user or group ID, the name of the share, quota, snap quota. The share is tied to the user/group ID, that's the unique key. If it changes, it is automatically changed in ZFS by IDM. The quota and snap quota aren't automatically changed, but can be manually through IDM. 
 
 %Invocation
 %How is the module’s functionality invoked? If there is an Application Programming Interface (API), what methods are published, and how is access controlled? Supporting Modules What supporting Perl modules (internal and external to Identity) are used? For what purposes?
-%
+
 %Underlying Services
 %For server administration modules, what services are provided by the underlying server? Does the server provide service that facilitates authentication and/or authorization? What clients (in general and at Cal Poly Pomona) use the service?For what purposes?
-%
+
 %Service Connection Management
 %For server administration modules, how are server network connections and requests made and efficiently managed and reused? How does the underlying server authenticate the principal who is making requests?
-%
+
 \end{document}
