@@ -45,15 +45,15 @@ Dr. Rich
 %What functionality does the module provide?
 
 \section{Functionality}
-ZFS in our identity management platform provides numerous vital functions, the most obvious being storage for students, staff and faculty. Every currently affiliated person on campus has their own space on ZFS, accessible from machines on campus as well as their own computers. Although ZFS is natively a linux-born file system, it is actually made available through Samba in order to be accessible from all operating systems: MS Windows, OS X and Linux. 
+ZFS in our identity management platform provides numerous vital functions, the most obvious being storage for students, staff and faculty. Every currently affiliated person on campus has their own space on ZFS, accessible from machines on campus as well as their own computers. Although ZFS is natively a unix-born file system, it is also made available through Samba in order to be accessible from all operating systems: MS Windows, OS X, and Linux. 
 
-ZFS on campus also has a ZFSWeb component. Every currently affiliated human on campus has a directory made to be world-accessible through HTTP. Its outside address is in the form of http://www.cpp.edu/$\sim$[uid]/. Up until recently, this was a non-optional feature, however, now it must be enabled through the user IDM front-end.
+ZFS on campus also has a ZFSWeb component. Every currently affiliated human on campus has a directory made to be world-accessible through HTTP. Its outside address is in the form of http://www.cpp.edu/$\sim$[uid]/. Up until recently, this was a non-optional feature, however, now it must be enabled through the user ID Management front-end.
 
 %Identity Information
 %For modules that initiate automatic or manual identity information updates, what information is automatically and/or manually updated, and what are the authoritative sources? For server administration modules, What identity information is stored in the server? In what form?
 
 \section{Identity Information}
-The ZFS module has several obvious variables that must be kept sane. They include the owner's user or group ID, the name of the share, quota, snap quota. The share is tied to the user/group ID, that's the unique key. If it changes, it is automatically changed in ZFS by IDM. The quota and snap quota aren't automatically changed, but can be manually through IDM. 
+The ZFS module has several obvious variables that must be kept sane. They include the owner's user or group ID, the name of the share, the quota, and the snap quota. The share is tied to the user/group ID, that's the unique key. If it changes, it is automatically changed in ZFS by ID Management. The quota and snap quota aren't automatically changed, but can be manually through ID Management. 
 
 %Invocation
 %How is the module’s functionality invoked? If there is an Application
