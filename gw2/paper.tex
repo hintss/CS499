@@ -47,7 +47,7 @@ Dr. Rich
 \section{Functionality}
 ZFS in our identity management platform provides numerous vital functions, the most obvious being storage for students, staff and faculty. Every currently affiliated person on campus has their own space on ZFS, accessible from machines on campus as well as their own computers. Although ZFS is natively a linux-born file system, it is actually made available through Samba in order to be accessible from all operating systems: MS Windows, OS X and Linux. 
 
-ZFS on campus also has a ZFSWeb component. Every currently affiliated human on campus has a directory made to be world-accessible through HTTP. Its outside address is in the form of http://www.cpp.edu/$\sim$[uid]/. Up until recently, this was a non-optional feature, however, now it must be enabled through the user IDM front-end. 
+ZFS on campus also has a ZFSWeb component. Every currently affiliated human on campus has a directory made to be world-accessible through HTTP. Its outside address is in the form of http://www.cpp.edu/$\sim$[uid]/. Up until recently, this was a non-optional feature, however, now it must be enabled through the user IDM front-end.
 
 %Identity Information
 %For modules that initiate automatic or manual identity information updates, what information is automatically and/or manually updated, and what are the authoritative sources? For server administration modules, What identity information is stored in the server? In what form?
@@ -56,8 +56,21 @@ ZFS on campus also has a ZFSWeb component. Every currently affiliated human on c
 The ZFS module has several obvious variables that must be kept sane. They include the owner's user or group ID, the name of the share, quota, snap quota. The share is tied to the user/group ID, that's the unique key. If it changes, it is automatically changed in ZFS by IDM. The quota and snap quota aren't automatically changed, but can be manually through IDM. 
 
 %Invocation
-%How is the module’s functionality invoked? If there is an Application Programming Interface (API), what methods are published, and how is access controlled? Supporting Modules What supporting Perl modules (internal and external to Identity) are used? For what purposes?
+%How is the module’s functionality invoked? If there is an Application
+%Programming Interface (API), what methods are published, and how is
+%access controlled? 
+
 \section{Invocation}
+ZFS is a file system and logical volume manager, therefore many of the other
+supporting modules used for identity management will use ZFS to modify
+a user or group's file system. In this case, the ZFS module does not have a
+direct API but rather a 
+
+%Supporting Modules
+%What supporting Perl modules (internal and external to Identity) are used? For what purposes?
+
+\section{Supporting Modules}
+
 
 %Underlying Services
 %For server administration modules, what services are provided by the underlying server? Does the server provide service that facilitates authentication and/or authorization? What clients (in general and at Cal Poly Pomona) use the service?For what purposes?
