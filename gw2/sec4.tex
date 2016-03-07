@@ -1,0 +1,5 @@
+\section{Supporting Modules}
+%Supporting Modules
+%What supporting Perl modules (internal and external to Identity) are used? For what purposes?
+
+Inside of ID Management, ZFS is managed by the Identity::ZFS and Identity::REST::ZFS modules. Identity::ZFS has a dependency on Identity, however, this isn't used for anything other than logging. The two ZFS modules have several outside dependencies (Unix::Syslog, POSIX, etc), however, none of them are ZFS-specific. Instead, all the manipulation of the underlying ZFS filesystem is done by calling the ZFS command-line tools from inside the Identity::REST::ZFS module.
