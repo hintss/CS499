@@ -2,4 +2,4 @@
 %Service Connection Management
 %For server administration modules, how are server network connections and requests made and efficiently managed and reused? How does the underlying server authenticate the principal who is making requests?
 
-The ZFS module uses REST calls to modify object variables. The password for IDMGMT user is stored in '/etc/security/secrets/zfs-idmgmt' to better conceal it without showing it in plaintext in the code. There are four ZFS server on campus, an array of whose names is stored in code. All REST methods are pre-defined in a subroutine, so when one is called, the code is continously reused. 
+The ZFS module uses REST calls to modify object variables. The password for IDMGMT user is stored in '/etc/security/secrets/zfs-idmgmt' to better conceal it without showing it in plaintext in the code. There are four ZFS servers on campus, an array of whose hostnames is stored in code. All REST methods are pre-defined in a subroutine, so when one is called, the code is continuously reused. 
