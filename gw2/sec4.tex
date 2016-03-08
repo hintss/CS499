@@ -2,4 +2,6 @@
 %Supporting Modules
 %What supporting Perl modules (internal and external to Identity) are used? For what purposes?
 
-Inside of ID Management, ZFS is managed by the Identity::ZFS and Identity::REST::ZFS modules. Identity::ZFS has a dependency on Identity, however, this isn't used for anything other than logging. The two ZFS modules have several outside dependencies (Unix::Syslog, POSIX, etc), however, none of them are ZFS-specific. Instead, all the manipulation of the underlying ZFS filesystem is done by directly calling the ZFS command-line tools from inside the Identity::REST::ZFS module.
+Inside of Identity Management, ZFS is managed by the Identity::ZFS and Identity::REST::ZFS modules. Identity::ZFS has a dependency on Identity, however, this isn't used for anything other than logging. The two ZFS modules have several outside dependencies (Unix::Syslog, POSIX, etc), however, none of them are ZFS-specific. Instead, all the manipulation of the underlying ZFS filesystem is done by directly calling the ZFS command-line tools from inside the Identity::REST::ZFS module.
+
+Furthermore, POSIX is specifically used within ZFS to send a SIGALRM signal to check for timeout on the connection. LWP, the World-Wide Web library for Perl, is used for the same reason. Lastly, the external module, XML-Simple, is used to parse the respective xml. 
