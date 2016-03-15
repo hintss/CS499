@@ -1,0 +1,34 @@
+slobber@genters ~/git/cs499 0 $ svn info /media/cpp-home/svn/idmgmt/trunk/unx/doc/* | grep 'Relative URL\|Author\|Date'
+Relative URL: ^/trunk/unx/doc/attributes.pdf
+Last Changed Author: carich
+Last Changed Date: 2007-09-03 19:11:38 -0700 (Mon, 03 Sep 2007)
+Relative URL: ^/trunk/unx/doc/attributes.xls
+Last Changed Author: carich
+Last Changed Date: 2007-09-03 19:11:38 -0700 (Mon, 03 Sep 2007)
+Relative URL: ^/trunk/unx/doc/cardnumbers.txt
+Last Changed Author: henson
+Last Changed Date: 2015-06-16 17:30:50 -0700 (Tue, 16 Jun 2015)
+Relative URL: ^/trunk/unx/doc/gen_rest_docs.sh
+Last Changed Author: hncaldwell
+Last Changed Date: 2008-05-19 14:18:07 -0700 (Mon, 19 May 2008)
+Relative URL: ^/trunk/unx/doc/idmgmt
+Last Changed Author: carich
+Last Changed Date: 2007-09-03 19:13:02 -0700 (Mon, 03 Sep 2007)
+Relative URL: ^/trunk/unx/doc/idmgmt.pdf
+Last Changed Author: hncaldwell
+Last Changed Date: 2009-02-10 12:57:14 -0800 (Tue, 10 Feb 2009)
+Relative URL: ^/trunk/unx/doc/idmgmt.tex
+Last Changed Author: carich
+Last Changed Date: 2007-09-03 19:13:02 -0700 (Mon, 03 Sep 2007)
+Relative URL: ^/trunk/unx/doc/intranet_replacement.doc
+Last Changed Author: carich
+Last Changed Date: 2007-09-03 19:10:39 -0700 (Mon, 03 Sep 2007)
+Relative URL: ^/trunk/unx/doc/intranet_replacement.pdf
+Last Changed Author: carich
+Last Changed Date: 2007-09-03 19:10:39 -0700 (Mon, 03 Sep 2007)
+Relative URL: ^/trunk/unx/doc/intranet_replacement.txt
+Last Changed Author: carich
+Last Changed Date: 2007-09-03 19:10:39 -0700 (Mon, 03 Sep 2007)
+Relative URL: ^/trunk/unx/doc/rest.rst
+Last Changed Author: hncaldwell
+Last Changed Date: 2009-11-05 11:46:53 -0800 (Thu, 05 Nov 2009)

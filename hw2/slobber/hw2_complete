@@ -1,0 +1,52 @@
+Attribute                Applicability          Single-Valued (S) xor  Servers fetched (F) and/or stored (S)                             
+                         user?  group?  alias?  Multi-Valued (M)?      Oracle  MySQL  Kerberos  LDAP  AD  ZFS
+affiliation              x                      s                      fs                       fs    fs  
+cardnum                  x                      s                      fs                                 
+create_date                     x               s                      fs                       fs    f   
+csepid                   x                      s                      fs                       s         
+department               x                      s                                               fs    s   
+disabled                 x                      s                      fs      fs     s         s     s   
+emplid                   x                      s                      fs                       s     s   
+eppn                     x                      s                                               f         
+expiration               x                      s                      s       s      s         fs    fs  
+fax                      x      x               s                                               fs    s   
+feature_set              x      x               m                                               fs        
+ferpa                    x                      s                                               fs    fs  
+first_name               x                      s                                               fs    s   
+gid                      x      x               s                                               f         
+groups                   x                      m                                               f         
+homedir                  x                      s                                                     fs  
+id_photo                 x                      s                      fs                                 
+last_name                x                      s                                               fs    s   
+location                 x      x               s                                               fs    s   
+lockout                  x                      s                                                     fs  
+members                         x               m                                               fs    s   
+mi                       x                      s                                               fs    s   
+mod_auditors                    x               m                              fs                         
+mod_restricted_to_local         x               s                              fs                         
+moderators                      x               m                              fs                         
+name                     x      x       x       s                              s                s     s   
+netpass                  x                      s                      fs      fs                         
+netpass_disabled         x                      s                      fs      fs                         
+netpwd_lastchange        x                      s                      fs                                 
+o365mbx                  x      x               s                                                     fs  
+password                 x                      s                                     s         s     s   
+phone                    x      x               s                                               fs    s   
+policies                 x                      m                      fs                                 
+population                      x               m                                               fs    fs  
+position                 x                      s                                               fs    s   
+ps_cell_phone            x                      s                      fs                                 
+ps_email                 x                      s                      fs                                 
+pwd_expiration           x                      s                      s              s         fs    s   
+pwd_lastchange           x                      s                      fs                             f   
+title                    x      x               s                                               fs    s   
+type                     x      x       x       s                              fs                         
+uid                      x                      s                      fs                       f         
+visibility                      x               s                                               fs    s   
+zfs_hidden               x      x               s                                                         fs
+zfs_quota                x      x               s                                                         fs
+zfs_server               x      x               s                                               fs        fs
+zfs_snap_quota           x      x               s                                                         fs
+zfsweb_hidden            x      x               s                                                         fs
+zfsweb_quota             x      x               s                                                         fs
+zfsweb_snap_quota        x      x               s                                                         fs

@@ -1,0 +1,108 @@
+slobber@genters ~/git/cs499 0 $ cat /media/cpp-home/svn/idmgmt/trunk/unx/Identity/User.pm | grep 'sub \|Store\|Fetch' | sed -e 's/ {//g' -e 's/sub //g' -e 's]Store or fetch]Set/get]g' -e 's/Store/Set/g' -e 's/Fetch/Get/g'
+match
+create
+delete
+# Set/get user activated #
+activated
+# Set/get user affiliation #
+affiliation
+authenticate
+authenticate_internal
+# Get user cardnum #
+cardnum
+# Get user id_photo #
+id_photo
+# Set/get user claim #
+claim
+# Set/get user department #
+department
+# Set/get user disabled #
+disabled
+# Set/get user emplid #
+emplid
+# Set/get user csepid #
+csepid
+# Set/get user policies #
+policies
+# Set/get user expiration #
+expiration
+# Set/get user pwd_expiration #
+pwd_expiration
+# Set/get account lockout status #
+lockout
+# Get user creation date #
+create_date
+# Set/get user ferpa #
+ferpa
+# Set/get user forward #
+forward
+# Get user groups #
+groups
+# Set/get user homedir (Windows) #
+homedir
+# Set or generate username #
+name
+# Get date of last password change #
+pwd_lastchange
+# Get date of last network password change #
+netpwd_lastchange
+# Set/get user netpass #
+netpass
+# Set/get user netpass_disabled #
+netpass_disabled
+# Get user Peoplesoft cell_phone #
+ps_cell_phone
+# Get user Peoplesoft email addresses #
+ps_email
+# Set/get user pwreset_token_enabled #
+pwreset_token_enabled
+pwd_expiration_interval
+# Set or generate user password #
+password
+# Set/get user position #
+position
+# Set/get user pwreset #
+pwreset
+# Set/get user pwreset_token #
+pwreset_token
+pwreset_expired
+# Set/get user pwd_history #
+pwd_history
+# Get user pwreset_exists #
+pwreset_exists
+# Set/get user last_name #
+last_name
+# Set/get user first_name #
+first_name
+# Set/get user mi #
+mi
+# Set/get user title #
+title
+# Get user uid #
+uid
+# Get user eppn #
+eppn
+authorized
+weak_password
+slobber@genters ~/git/cs499 0 $ cat /media/cpp-home/svn/idmgmt/trunk/unx/Identity/Group.pm | grep 'sub \|Store\|Fetch' | sed -e 's/ {//g' -e 's/sub //g' -e 's]Store or fetch]Set/get]g' -e 's/Store/Set/g' -e 's/Fetch/Get/g'
+create
+delete
+# Set/get group moderators #
+moderators
+# Set/get group mod_auditors #
+mod_auditors
+# Set/get group mod_restricted_to_local #
+mod_restricted_to_local
+# Set/get group forward #
+forward
+members
+# Set groupname #
+name
+# Set/get group title #
+title
+# Set/get group visibility #
+visibility
+# Set/get group population #
+population
+# Get group create date #
+create_date

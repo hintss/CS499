@@ -1,0 +1,30 @@
+Slava Maslennikov
+March 14th, 2016
+CS499-02
+Dr. Rich
+
+Homework 3
+
+1.  a) rwadtncTNC
+    b) Owner group permissions aren't set, therefore they inherit EVERYONE@ permissions: rtnc.
+    c) rtnc
+    d) rtnc
+
+2.  a) rxwadtncDTNC
+    b) rxtnc
+    c) rxtnc
+    d) rtnc
+    e) A::OWNER@:rwadtTnNcC
+       A:g:cppweb@cpp.edu:rtnc
+
+3.  a) rwadxtncDTNC
+    b) Since permissions for g:OWNER@ and EVERYONE@ aren't present, all access is denied to group OWNER. 
+    c) Since permissions for EVERYONE@ aren't present, all access is denied to unspecified users, in this case, the world. 
+    d) r
+    e) A::OWNER@:rwadtTnNcC
+       A:g:cppweb@cpp.edu:rtnc
+
+4.  A:d:OWNER@:rwxdtncoDTNC
+    A:dg:OWNER@:w
+    A:fig:OWNER@:rwaxdtncoDTNC
+    A:fi:EVERYONE@:
